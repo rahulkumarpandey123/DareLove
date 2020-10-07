@@ -9,6 +9,7 @@
     margin: auto;
     box-sizing: border-box;
     overflow: hidden;
+    background: linear-gradient(to bottom,pink,lightgreen);
 }
 #character{
     width: 100px;
