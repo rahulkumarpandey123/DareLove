@@ -26,15 +26,19 @@ document.addEventListener("keydown", event => {
       counter++;
     //   block.innerText="";
   });
-  setInterval(function(){
+ var d= setInterval(function(){
       var characterLeft = parseInt(window.getComputedStyle(character).getPropertyValue("left"));
       var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
       var blockTop = parseInt(window.getComputedStyle(block).getPropertyValue("top"));
       if(characterLeft==blockLeft && blockTop<500 && blockTop>300){
           alert("RAHUL is survived by love 💜 with : " + counter +"times");
           block.style.animation = "none";
+          clearInterval(d);
+          alert("refresh the page and play again")
       }
-  },1);
+    //   console.log(blockTop)
+     
+  },1.5);
   
   
   
